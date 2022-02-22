@@ -1,6 +1,6 @@
 ## Ejercitación integradora - React  Mui
-Se utiliza para la siguiente aplicación la web de Rick y Morty: [https://rickandmortyapi.com/]
-Los componente utilizados son de [https://mui.com/]
+* Se utiliza para la siguiente aplicación la web de Rick y Morty: [https://rickandmortyapi.com/]
+* Los componentes utilizados son de [https://mui.com/]
 
 **Consignas**
 *Estructura de la aplicación:*
