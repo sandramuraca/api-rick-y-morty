@@ -1,7 +1,7 @@
 const Episodios =() =>{
     return(
         <div>
-            <p>Sección Episodios</p>
+            <h1>SECCION EPISODIOS</h1>
         </div>
         
     )

@@ -8,13 +8,14 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom"
 
-
+// sx={{ bgcolor: "black"}}
 const Nav = ()=>{
     return (
-        <Box sx={{ flexGrow: 1 }}>
+      
+              <Box sx={{ flexGrow: 1 }}>
           <AppBar 
           position="fixed"
-          sx={{ bgcolor: "black"}}>
+          >
             <Toolbar>
               <IconButton
                 size="large"
@@ -28,14 +29,24 @@ const Nav = ()=>{
               <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
                 Rick & Morty
               </Typography>
+
               <Button color="inherit">
                 <Link to="/">
-                Principal
+                Home
                 </Link>
               </Button>
 
               <Button color="inherit">
-                Detalle</Button>
+                <Link to="/episodios">
+                Episodios
+                </Link>
+              </Button>
+
+              <Button color="inherit">
+                <Link to="/ubicaciones">
+                Ubicaciones
+                </Link>
+              </Button>
             </Toolbar>
           </AppBar>
         </Box>

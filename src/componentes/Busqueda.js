@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-
+import Paper from "@mui/material/Paper";
 //onClick={handleClick}
 
 const Busqueda = ({ escritoInput, clickBoton }
@@ -13,20 +13,22 @@ const Busqueda = ({ escritoInput, clickBoton }
     return(
         <Box>
             <TextField
-        sx={{ width: 400 }}
-        id="standard-basic"
-        label="Search your character"
-        variant="standard"
-        onChange={escritoInput}
-      />
-      <Button
-        margin="normal"
-        variant="outline"
-        endIcon={<SearchIcon />}
-        onClick={clickBoton}
-      >
-        Buscar
-      </Button>
+              sx={{ width: 400 }}
+              id="standard-basic"
+              label="Search your character"
+              variant="standard"
+              onChange={escritoInput}
+        />
+
+
+          <Button
+            margin="normal"
+            variant="outline"
+            endIcon={<SearchIcon />}
+            onClick={clickBoton}
+          >
+            Buscar
+          </Button>
 
         </Box>
         

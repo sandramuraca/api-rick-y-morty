@@ -4,12 +4,9 @@ import Tarjeta from './Tarjeta';
 import Busqueda from './Busqueda';
 
 
-
-
 const SeccionPrincipal = () =>{
 
   const [personajes, setPersonajes] = useState([]);
-
   const [valorDelInput, setValorDelInput] = useState("");
   const [busqueda, setBusqueda] = useState("");
 
@@ -27,7 +24,6 @@ const SeccionPrincipal = () =>{
     console.log(valorDelInput);
     setBusqueda(valorDelInput);
   };
-
 
     return(
         <Box sx={{ display: "flex", 
@@ -49,6 +45,7 @@ const SeccionPrincipal = () =>{
                     imagen={personaje.image}
                     nombre={personaje.name}
                     status={personaje.status}
+                    id={personaje.id}
                     />
             
                 ))}
