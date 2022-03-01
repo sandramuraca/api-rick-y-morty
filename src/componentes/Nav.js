@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 const Nav = ()=>{
     return (
       
-              <Box sx={{ flexGrow: 1 }}>
+          <Box sx={{ flexGrow: 1 }}>
           <AppBar 
           position="fixed"
           >
@@ -31,7 +31,8 @@ const Nav = ()=>{
               </Typography>
 
               <Button color="inherit">
-                <Link to="/">
+                <Link to ="/">
+                 
                 Home
                 </Link>
               </Button>

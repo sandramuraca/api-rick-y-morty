@@ -7,9 +7,10 @@ import { CardActionArea } from '@mui/material';
 import { Link } from "react-router-dom";
 
 const Tarjeta = ({imagen,nombre,status,id}) =>{
+    console.log(id)
     return(
         <Box>
-            <Link to={`/detallesPersonajes/${id}`}>
+            <Link to={`/detallesPersonajes/${id}`} >
                 <Card sx={{ width: 345, m: 2 }}>
                     <CardActionArea>
                         <CardMedia
