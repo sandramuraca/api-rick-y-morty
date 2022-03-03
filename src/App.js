@@ -6,8 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Ubicaciones from './componentes/Ubicaciones';
 import DetallePersonaje from './componentes/DetallePersonaje';
 import Episodios from './componentes/Episodios';
-//import Busqueda from './componentes/Busqueda';
-import {useState, useEffect} from "react";
+import { useState } from "react";
 
 
 
@@ -32,8 +31,7 @@ const  App = () =>{
       <BrowserRouter>
        <Nav/> 
        <Box>
-       <Busqueda escritoInput={escritoInput} clickBoton={clickBoton}/>
-         {/* <Busqueda handleChange={escritoInput} handleClick={clickBoton}/> */}
+        <Busqueda escritoInput={escritoInput} clickBoton={clickBoton}/>
        </Box>
          <Routes>
           <Route path="/" element={<SeccionPrincipal busqueda={busqueda}/>}/>

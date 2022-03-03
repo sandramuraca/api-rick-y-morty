@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import {useState, useEffect } from "react";
 import Tarjeta from './Tarjeta';
-import Busqueda from './Busqueda';
+
 
 
 const SeccionPrincipal = ({busqueda}) =>{

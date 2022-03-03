@@ -11,14 +11,13 @@ const DetallePersonaje=() =>{
     const params = useParams();
     const [personaje, setPersonaje] = useState([]);
 
-    useEffect(() => {
+    useEffect(() =>{
         fetch(`https://rickandmortyapi.com/api/character/${params.idPersonaje}`)
-          .then((res) => res.json())
-          .then((data) => {
-            setPersonaje(data);
-          });
-      });
+        .then(res => res.json())
+        .then((data) => setPersonaje(data))
+      }, [])
 
+    
     return(
       
         <Box>
