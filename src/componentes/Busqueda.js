@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import Paper from "@mui/material/Paper";
-//onClick={handleClick}
+
 
 const Busqueda = ({ escritoInput, clickBoton }
     ) =>{
@@ -19,7 +19,6 @@ const Busqueda = ({ escritoInput, clickBoton }
               variant="standard"
               onChange={escritoInput}
         />
-
 
           <Button
             margin="normal"
